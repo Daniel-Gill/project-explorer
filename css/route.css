@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+}
+.route-tile {
+    margin-top: .5em;
+}
+.route-badge {
+    font-size: .6em;
+}
+.wider {
+    width: 25em !important;
+}
+#map {
+    height: 90%;
+}
