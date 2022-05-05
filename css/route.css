@@ -3,6 +3,8 @@ html, body {
 }
 .route-tile {
     margin-top: .5em;
+    border: 0.15em solid rgb(65, 65, 65);
+    box-shadow: 0.5em 0.5em 0.5em rgb(133, 133, 133);
 }
 .route-badge {
     font-size: .6em;
@@ -12,4 +14,9 @@ html, body {
 }
 #map {
     height: 90%;
+}
+
+#projects {
+    width: calc(100% - 0.5em);
+    margin-left: 0.5em;
 }

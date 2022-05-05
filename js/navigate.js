@@ -20,7 +20,7 @@ function createProject(project) {
     if(project["collaborativeProject"]) {
         const link = $("<a>").addClass("card-link").attr("href", project["collaborativeLink"]).text("GitHub").attr("target", "_blank");
         links.append(link);
-        const tag = $("<button>").addClass("col badge rounded-pill bg-secondary btn").text("Collaborative").attr("onclick", "window.location.href='index.html?Collaborative'");
+        const tag = $("<button>").addClass("col badge rounded-pill bg-secondary btn").text("Collaborative").attr("onclick", "window.location.href='index.html?collaborative'");
         tag.css("margin-right", ".5em");
         tags.append(tag);
     }
@@ -33,14 +33,14 @@ function createProject(project) {
         links.append(link);
     }
     if(project["country"] != project["websiteCategory"]) {
-        const tag = $("<button>").addClass("col badge rounded-pill bg-secondary btn").text(project["country"]).attr("onclick", "window.location.href='index.html?Country=" + project["country"] + "'");
+        const tag = $("<button>").addClass("col badge rounded-pill bg-secondary btn").text(project["country"]).attr("onclick", "window.location.href='index.html?" + project["country"] + "'");
         tag.css("margin-right", ".5em");
         tags.append(tag);
     }
-    var tag = $("<button>").addClass("col badge rounded-pill bg-secondary btn").text(project["author"]).attr("onclick", "window.location.href='index.html?Author=" + project["author"] + "'");
+    var tag = $("<button>").addClass("col badge rounded-pill bg-secondary btn").text(project["author"]).attr("onclick", "window.location.href='index.html?" + project["author"] + "'");
     tag.css("margin-right", ".5em");
     tags.append(tag);
-    tag = $("<button>").addClass("col badge rounded-pill bg-secondary btn").text(project["websiteCategory"]).attr("onclick", "window.location.href='index.html?Category=" + project["websiteCategory"] + "'");
+    tag = $("<button>").addClass("col badge rounded-pill bg-secondary btn").text(project["websiteCategory"]).attr("onclick", "window.location.href='index.html?" + project["websiteCategory"] + "'");
     tag.css("margin-right", ".5em");
     tags.append(tag);
  
@@ -63,22 +63,17 @@ function checkFilter(project) {
     if(query == "") {
         return true;
     }
-    console.log(query);
-    const urlParams = new URLSearchParams(query);
-    const country = urlParams.get("Country");
-    const category = urlParams.get("Category");
-    const author = urlParams.get("Author");
-    const collaborative = urlParams.get("Collaborative");
-    if(country != null) {
-        return project["country"] == country;
+    var search = decodeURI(query.substring(1));
+    search = search.toLowerCase();
+    console.log(search);
+    if(search == "collaborative") {
+        return project["name"].toLowerCase().includes(search) || project["shortDescription"].toLowerCase().includes(search) || project["author"].toLowerCase().includes(search) || project["collaborativeProject"];
     }
-    if(category != null) {
-        return project["websiteCategory"] == category;
+    if(project["country"] != null) {
+        return project["name"].toLowerCase().includes(search) || project["shortDescription"].toLowerCase().includes(search) || project["author"].toLowerCase().includes(search) || project["country"].toLowerCase().includes(search);
     }
-    if(author != null) {
-        return project["author"] == author;
+    if(project["websiteCategory"] != null) {
+        return project["name"].toLowerCase().includes(search) || project["shortDescription"].toLowerCase().includes(search) || project["author"].toLowerCase().includes(search) || project["websiteCategory"].toLowerCase().includes(search);
     }
-    if(collaborative != null) {
-        return project["collaborativeProject"];
-    }
+    return (project["name"].toLowerCase().includes(search) || project["shortDescription"].toLowerCase().includes(search) || project["author"].toLowerCase().includes(search));
 }
