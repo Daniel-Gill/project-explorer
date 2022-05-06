@@ -8,7 +8,8 @@
             "websiteLink":"https://www.railwayoperationsimulator.com/catalog/community-projects/fantasy/abbey-park-and-abbey-road",
             "imageLink":"https://www.railwayoperationsimulator.com/wp-content/uploads/2018/02/Abbey-Park-and-Abbey-Road.jpg",
             "collaborativeProject":false,
-            "onWiki":false
+            "onWiki":true,
+            "wikiLink":"https://www.danielgill.net/w/index.php/Abbey_Park_and_Abbey_Road"
         },
         {
             "name":"Aldershot",
@@ -20,7 +21,8 @@
             "imageLink":"https://www.railwayoperationsimulator.com/wp-content/uploads/2012/01/Aldershot.jpg",
             "collaborativeProject":false,
             "onProjectMap":true,
-            "onWiki":false,
+            "onWiki":true,
+            "wikiLink":"https://www.danielgill.net/w/index.php/Aldershot",
             "rlLocation": {
                 "lat":51.246240,
                 "long":-0.759917
@@ -36,7 +38,8 @@
             "imageLink":"https://www.railwayoperationsimulator.com/wp-content/uploads/2018/01/aldgate_junction.jpg",
             "collaborativeProject":false,
             "onProjectMap":false,
-            "onWiki":false,
+            "onWiki":true,
+            "wikiLink":"https://www.danielgill.net/w/index.php/Aldgate_Junction",
             "rlLocation": {
                 "lat":51.514130,
                 "long":-0.075340
@@ -292,6 +295,127 @@
             "rlLocation": {
                 "lat":37.558561,
                 "long":-122.309604
+            }
+        },
+        {
+            "name":"Cambrian Line",
+            "author":"Mark Jones",
+            "websiteCategory":"United Kingdom",
+            "country":"United Kingdom",
+            "shortDescription":"Presently, trains between Birmingham and the Cambrian Line run at an approximate two hour frequency usually consisting of two two-car units which divide/combine at Machynlleth; one portion continuing to/from Pwllheli, the other to/from Aberystwyth.",
+            "websiteLink":"https://www.railwayoperationsimulator.com/catalog/community-projects/united-kingdom/cambrian-line",
+            "imageLink":"https://www.railwayoperationsimulator.com/wp-content/uploads/2018/02/Cambrian-scaled.jpg",
+            "collaborativeProject":false,
+            "onProjectMap":true,
+            "onWiki":true,
+            "wikiLink":"https://www.danielgill.net/w/index.php/Cambrian_Line",
+            "rlLocation": {
+                "lat":52.595410,
+                "long":-3.868277
+            }
+        },
+        {
+            "name":"Cardiff Valley Lines",
+            "author":"ROSDevTeam",
+            "websiteCategory":"United Kingdom",
+            "country":"United Kingdom",
+            "shortDescription":"The South Wales area covered by this simulation incorporates mainly rural services between Cardiff and outlying areas, though some mainline services between England, Scotland and Swansea are also provided running via Newport, Cardiff and Bridgend.",
+            "websiteLink":"https://www.railwayoperationsimulator.com/catalog/community-projects/united-kingdom/cardiff-valley-lines",
+            "imageLink":"https://www.railwayoperationsimulator.com/wp-content/uploads/2020/09/ValleyLines-scaled.jpg",
+            "collaborativeProject":true,
+            "collaborativeLink":"https://github.com/Railway-Op-Sim/GB-ValleyLines",
+            "onProjectMap":true,
+            "onWiki":true,
+            "wikiLink":"https://www.danielgill.net/w/index.php/Cardiff_Valley_Lines",
+            "rlLocation": {
+                "lat":51.480020,
+                "long":-3.214400
+            }
+        },
+        {
+            "name":"Carlisle",
+            "author":"Csaba",
+            "websiteCategory":"United Kingdom",
+            "country":"United Kingdom",
+            "shortDescription":"The simulation area covers a large section of the West Coast Main Line from Carnforth to Kirkpatrick with the initial few miles of some branch lines (Windermere Branch, Carnforth Via Barrow in Furness, Settle & Carlisle, as well as Newcastle & Carlisle).",
+            "websiteLink":"https://www.railwayoperationsimulator.com/catalog/community-projects/united-kingdom/carlisle",
+            "imageLink":"https://www.railwayoperationsimulator.com/wp-content/uploads/2022/01/carlisle-scaled.bmp",
+            "collaborativeProject":false,
+            "onProjectMap":false,
+            "onWiki":true,
+            "wikiLink":"https://www.danielgill.net/w/index.php/Carlisle",
+            "rlLocation": {
+                "lat":54.889018,
+                "long":-2.930099
+            }
+        },
+        {
+            "name":"Castlefield Corridor",
+            "author":"Daniel Gill",
+            "websiteCategory":"United Kingdom",
+            "country":"United Kingdom",
+            "shortDescription":"This route covers the busy city centre lines in Manchester. Included are Manchester Victoria, Piccadilly and Oxford Road, Deansgate and Salford Central and Crescent.",
+            "websiteLink":"https://www.railwayoperationsimulator.com/catalog/community-projects/united-kingdom/castlefield-corridor",
+            "imageLink":"https://www.railwayoperationsimulator.com/wp-content/uploads/2020/09/CastlefieldCorridor.png",
+            "collaborativeProject":false,
+            "onProjectMap":false,
+            "onWiki":true,
+            "wikiLink":"https://www.danielgill.net/w/index.php/Castlefield_Corridor",
+            "rlLocation": {
+                "lat":53.478772,
+                "long":-2.251958
+            }
+        },
+        {
+            "name":"Central Line - London Underground",
+            "author":"Frederick",
+            "websiteCategory":"United Kingdom",
+            "country":"United Kingdom",
+            "shortDescription":"Take on the challenge to operate all 77 peak hour trains running through the central line and 66 trains off peak, including the Hainault – Woodford Shuttle.",
+            "websiteLink":"https://www.railwayoperationsimulator.com/catalog/community-projects/united-kingdom/central-line-london-underground",
+            "imageLink":"https://www.railwayoperationsimulator.com/wp-content/uploads/2021/10/CentralLine-scaled.bmp",
+            "collaborativeProject":false,
+            "onProjectMap":false,
+            "onWiki":true,
+            "wikiLink":"https://www.danielgill.net/w/index.php/Central_Line_-_London_Underground",
+            "rlLocation": {
+                "lat":51.516419,
+                "long":-0.129700
+            }
+        },
+        {
+            "name":"Charing Cross, Cannon Street & London Bridge",
+            "author":"Anthony Sheehy",
+            "websiteCategory":"United Kingdom",
+            "country":"United Kingdom",
+            "shortDescription":"These three termini (plus through trains from Blackfriars) connect London to Kent and the South East. Southeastern trains run through London Bridge to North Kent and onwards to Dover, Hastings, Ashford, etc.",
+            "websiteLink":"https://www.railwayoperationsimulator.com/catalog/community-projects/united-kingdom/charing-cross-cannon-street-london-bridge",
+            "imageLink":"https://www.railwayoperationsimulator.com/wp-content/uploads/2018/07/Charing-Cross-Canon-St-London-Bridge-scaled.jpg",
+            "collaborativeProject":false,
+            "onProjectMap":true,
+            "onWiki":true,
+            "wikiLink":"https://www.danielgill.net/w/index.php/Charing_Cross,_Cannon_Street_%26_London_Bridge",
+            "rlLocation": {
+                "lat":51.503705,
+                "long":-0.084258
+            }
+        },
+        {
+            "name":"Chatham Main Line Rochester to Faversham + Medway Valley & Sheerness",
+            "author":"MissCatTrap",
+            "websiteCategory":"United Kingdom",
+            "country":"United Kingdom",
+            "shortDescription":"The Chatham Main Line is a busy railway stretching from London to the Kent Coast. With limited quad track and many express and stopping services, can you successfully signal this important railway?",
+            "websiteLink":"https://www.railwayoperationsimulator.com/catalog/community-projects/united-kingdom/chatham-main-line-rochester-to-faversham",
+            "imageLink":"https://www.railwayoperationsimulator.com/wp-content/uploads/2022/02/ChathamMainLine-Medway.bmp",
+            "collaborativeProject":true,
+            "collaborativeLink":"https://github.com/Railway-Op-Sim/GB-ChathamMainLine-Medway",
+            "onProjectMap":true,
+            "onWiki":true,
+            "wikiLink":"https://www.danielgill.net/w/index.php/Chatham_Main_Line_Rochester_to_Faversham_%2B_Medway_Valley_%26_Sheerness",
+            "rlLocation": {
+                "lat":51.380014,
+                "long":0.521828
             }
         }
     ]
