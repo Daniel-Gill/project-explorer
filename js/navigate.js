@@ -67,13 +67,10 @@ function checkFilter(project) {
     search = search.toLowerCase();
     console.log(search);
     if(search == "collaborative") {
-        return project["name"].toLowerCase().includes(search) || project["shortDescription"].toLowerCase().includes(search) || project["author"].toLowerCase().includes(search) || project["collaborativeProject"];
+        return project["name"].toLowerCase().includes(search) || project["shortDescription"].toLowerCase().includes(search) || project["author"].toLowerCase().includes(search) || project["collaborativeProject"] || project["websiteCategory"].toLowerCase().includes(search);
     }
     if(project["country"] != null) {
-        return project["name"].toLowerCase().includes(search) || project["shortDescription"].toLowerCase().includes(search) || project["author"].toLowerCase().includes(search) || project["country"].toLowerCase().includes(search);
-    }
-    if(project["websiteCategory"] != null) {
-        return project["name"].toLowerCase().includes(search) || project["shortDescription"].toLowerCase().includes(search) || project["author"].toLowerCase().includes(search) || project["websiteCategory"].toLowerCase().includes(search);
+        return project["name"].toLowerCase().includes(search) || project["shortDescription"].toLowerCase().includes(search) || project["author"].toLowerCase().includes(search) || project["country"].toLowerCase().includes(search) || project["websiteCategory"].toLowerCase().includes(search);
     }
     return (project["name"].toLowerCase().includes(search) || project["shortDescription"].toLowerCase().includes(search) || project["author"].toLowerCase().includes(search));
 }
